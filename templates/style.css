@@ -3,6 +3,13 @@ html{
     font-family: Lato, sans-serif;
 }
 
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+}
 
 .navbar{
     max-width: 640px;
@@ -53,7 +60,59 @@ html{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
+
+
+.form__input{
+    width: 100%;
+}
+
+.form__label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__textarea{
+    width: inherit;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    background-color: #f3f3f7;
+    margin-bottom: 10;
+}
+
+.form__submit{
+    background-color: #3cd0fa;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.form__submit:hover{
+    background-color: #18c1e1;
+}
+
+.entry{
+    margin-top: 50px;
+}
+
+.entry__title{
+    display: inline;
+    font-size: 18px;
+}
+
+.entry__date{
+    color: #5c6b70;
+}
+
+.entry__contenten{
+    font-size: 16px;
+    line-height: 150%;
+}
+
 
 

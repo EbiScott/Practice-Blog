@@ -21,20 +21,20 @@
             <h1>Add New entry</h1>
             <form  class="form" action="/entry" method="POST">
                 <p class="form__input">
-                    <label class="form__label" for="entry">Entry Contents</label>
-                    <textarea name="content"  id="entry" class="form__textarea"></textarea>
+                    <!-- <label class="form__label" for="entry">Entry Contents: </label> -->
+                    <textarea name="content"  id="entry" class="form__textarea" aria-label="Entry Contents"></textarea>
                 </p>
                 <button type="submit" class="form__submit">Add entry</button>
             </form>
         </section>
         <section>
             <h1>Recent Posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>A bit of a chill day today</h2>
-                    <time datetime="08-05-2024">May 8th</time>
+                    <h2 class="entry__title">A bit of a chill day today</h2>
+                    <time class="entry__date" datetime="08-05-2024">• May 8th</time>
                 </div>
-                <p>
+                <p class="entry__content">
                     This is just random stuff. This can also be called placeholders or whatever.
                 </p>
             </article>
@@ -44,7 +44,7 @@
         <div class="footer__content">
             <section class="left">
                 <a href="#" class="footer__item">Made by Eworitse Egbejule</a>
-                <a href="#" class="footer__item">Checkout my other projects</a>
+                <a href="https://github.com/EbiScott/" class="footer__item">Checkout my other projects</a>
             </section>
             <section class="right">
                 <div class="footer__column">
@@ -60,3 +60,4 @@
     </footer>
 </body>
 </html>
+
