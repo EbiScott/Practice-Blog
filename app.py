@@ -7,12 +7,13 @@ from pymongo import MongoClient
 
 
 app = Flask(__name__)
-
+client = MongoClient()
+app.db = client.microblog
 entries = []
 
 @app.route("/", methods=["POST", "GET"])
 def home():
-
+    print([e for e in app.db.entries.find({})])
     if request.method == "POST":
         entry_content = request.form.get("content")
         formatted_date = datetime.datetime.today().strftime("%Y- %m- %d")
