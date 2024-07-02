@@ -1,12 +1,13 @@
-### Microblog: A Simple Flask App
+# Microblog: 
+## A Simple Flask App
 ***
 This is a simple Flask application for creating a microblog. Users can post short entries, and the app displays them on the homepage with formatted dates.
 
-## Features
+### Features
 1. Create new blog entries
 2. Display existing entries with formatted dates
 
-## Requirements
+### Requirements
 * Python 3.6 or later
 * Flask
 * pymongo
@@ -21,7 +22,7 @@ Clone this repository:
   git clone https://github.com/EbiScott/Practice-Blog/
 ```
 
-# Install the required dependencies:
+#### Install the required dependencies:
 ``` Bash
   pip install -r requirements.txt
 ``` 
@@ -37,7 +38,7 @@ Replace "your_mongodb_host:port" with your actual MongoDB connection details.
 ---
 
 Running the App
-# Start the development server:
+#### Start the development server:
 ``` Bash
   python app.py
 ```
@@ -46,10 +47,10 @@ Running the App
   
 ---
 
-# Contributing
+### Contributing
 Feel free to fork this repository and contribute your own improvements!
 
 ___
 
-## License
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
